@@ -287,4 +287,9 @@ function generateId() {
   return Math.floor(Math.random() * 10001);
 }
 
+window.onbeforeunload = function(){
+  return "All the tasks will be lost if you refresh the page, are you sure? ";
+};
+
+
 export default KanbanBoard;
